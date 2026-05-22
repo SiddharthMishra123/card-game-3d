@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card Game - Rummy & Poker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container"></div>
+    <div id="ui-container">
+        <div id="menu" class="menu">
+            <h1>🃏 3D Card Game 🃏</h1>
+            <div class="menu-buttons">
+                <button id="rummy-btn" class="game-btn">🃏 Play Rummy</button>
+                <button id="poker-btn" class="game-btn">🎰 Play Poker</button>
+            </div>
+        </div>
+        <div id="game-ui" class="game-ui hidden">
+            <div id="player-info"></div>
+            <div id="game-stats"></div>
+            <div id="action-buttons"></div>
+            <button id="back-btn" class="back-btn">← Back to Menu</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scenes/GameScene.js"></script>
+    <script src="js/cards/Card3D.js"></script>
+    <script src="js/cards/Deck.js"></script>
+    <script src="js/games/Rummy.js"></script>
+    <script src="js/games/Poker.js"></script>
+</body>
+</html>
